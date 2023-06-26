@@ -1,0 +1,20 @@
+button {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 22%;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 105px;
+  height: 105px;
+}
