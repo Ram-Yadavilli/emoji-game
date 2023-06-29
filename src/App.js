@@ -87,10 +87,12 @@ class App extends Component {
     let u = list.filter((i) => i.id === id);
     if (!d.includes(u[0].id)) {
       d.push(u[0].id);
+      let i = list.length - 1;
       if (d.length <= l.length) {
-        for (let i = list.length - 1; i > 0; i--) {
+        while (i > 0) {
           let j = Math.floor(Math.random() * (i + 1));
           [list[i], list[j]] = [list[j], list[i]];
+          i -= 1;
         }
         if (!active) {
           this.setState((i) => ({ list, score: i.score + 1 }));

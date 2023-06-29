@@ -11,7 +11,6 @@ const Home = (props) => {
     <button onClick={b}>
       <li>
         <img src={emojiUrl} alt={emojiName} />
-        <p>{emojiName}</p>
       </li>
     </button>
   );
